@@ -1,0 +1,225 @@
+body {
+  background-color: #f9f7ed;
+}
+
+#main-container {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  display: grid;
+  grid-template-rows: 0fr 0fr 0fr 5fr;
+  justify-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-size: 4em;
+  color: #fc9f5b;
+}
+
+#modal-startgame {
+  position: fixed;
+  padding-top: 250px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+#modal-startgame-content {
+  margin: auto;
+  padding: 20px;
+  width: 550px;
+  border-radius: 10px;
+  display: grid;
+  justify-items: center;
+  background: rgba(247, 255, 247, 0.95);
+}
+
+#startgame-header {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  text-align: center;
+  font-size: 2.5em;
+  color: #21272e;
+  padding: 10px;
+}
+
+label {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  font-size: 2em;
+  text-align: center;
+}
+
+#p1-input, #label-p1-input {
+  color: #7dcfb6;
+}
+
+#p2-input, #label-p2-input {
+  color: #fbd1a2;
+}
+
+input {
+  background: rgba(247, 255, 247, 0);
+}
+
+input {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  font-size: 1em;
+  margin: 20px;
+  border-radius: 10px;
+  border: 4px solid;
+  width: 50%;
+  padding: 5px 10px 5px 10px;
+  outline: none;
+}
+
+#startgame-button-div {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+#startgame-button {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  margin-top: 20px;
+  border: 5px solid #21272e;
+  background-color: #21272e;
+  color: #f9f7ed;
+  font-size: 2em;
+  width: 40%;
+  border-radius: 10px;
+  transition: 0.3s;
+  outline: none;
+}
+
+#startgame-button:hover {
+  border: 5px solid #21272e;
+  color: #21272e;
+  background-color: #f9f7ed;
+  transition: 0.3s;
+}
+
+#reset-button-div {
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  align-items: center;
+}
+
+#player-1-display {
+  font-size: 2em;
+  color: #7dcfb6;
+  justify-self: right;
+}
+
+#player-2-display {
+  font-size: 2em;
+  color: #fbd1a2;
+  justify-self: left;
+}
+
+#reset-button {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  border: 5px solid #fc9f5b;
+  background-color: #fc9f5b;
+  color: #f9f7ed;
+  font-size: 2em;
+  width: 120px;
+  border-radius: 10px;
+  transition: 0.3s;
+  justify-self: center;
+  outline: none;
+}
+
+#reset-button:hover {
+  border: 5px solid #fc9f5b;
+  background-color: #f9f7ed;
+  color: #fc9f5b;
+  transition: 0.3s;
+}
+
+#game-board {
+  margin-top: 30px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  width: 500px;
+  height: 500px;
+  border: 5px solid #21272e;
+  border-radius: 10px;
+}
+
+.cell {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border: 5px solid #21272e;
+  font-size: 6em;
+  color: #fbd1a2;
+}
+
+#modal-endgame {
+  display: none;
+  position: fixed;
+  padding-top: 250px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  transition: 1s;
+}
+
+#modal-endgame-content {
+  margin: auto;
+  padding: 20px;
+  width: 35%;
+  border-radius: 10px;
+  background: rgba(247, 255, 247, 0.9);
+}
+
+#endgame-display {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  text-align: center;
+  font-size: 2.5em;
+  color: #292f36;
+  padding: 10px;
+}
+
+#play-again-button-div {
+  text-align: center;
+  padding: 10px;
+}
+
+#play-again-button {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  margin-top: 20px;
+  border: 5px solid #fc9f5b;
+  background-color: #fc9f5b;
+  color: #f9f7ed;
+  font-size: 2em;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#play-again-button:hover {
+  border: 5px solid #fc9f5b;
+  background-color: #f9f7ed;
+  color: #fc9f5b;
+  transition: 0.3s;
+}
